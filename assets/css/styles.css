@@ -495,7 +495,7 @@ a.dotted-link:hover {
 }
 
 .education .item .title {
-  font-size: 16px;
+  font-size: 22px;
   margin-top: 0;
 }
 
@@ -510,6 +510,11 @@ a.dotted-link:hover {
 .education .item .university .year {
   color: #b0b7bf;
   font-weight: 500;
+}
+
+.education .item .subtitle {
+  font-size: 16px;
+  color: #434E5E;
 }
 
 /* Language Section */
@@ -711,6 +716,10 @@ body[data-theme="dark"] .experience .item .title {
   color: rgba(255, 255, 255, 0.9);
 }
 
+body[data-theme="dark"] .experience .item .subtitle {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 body[data-theme="dark"] .testimonials .item .quote {
   color: rgba(255, 255, 255, 0.9);
 }
@@ -728,6 +737,10 @@ body[data-theme="dark"] .testimonials .item .source .name {
 }
 
 body[data-theme="dark"] .education .item .title {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+body[data-theme="dark"] .education .item .subtitle {
   color: rgba(255, 255, 255, 0.9);
 }
 
