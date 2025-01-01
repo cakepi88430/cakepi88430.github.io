@@ -324,7 +324,7 @@ a.dotted-link:hover {
 }
 
 .experience .item .title {
-  font-size: 16px;
+  font-size: 22px;
   margin-top: 0;
   margin-bottom: 5px;
   line-height: 1.5;
@@ -346,6 +346,14 @@ a.dotted-link:hover {
 .experience .item .title .year {
   color: #999;
   font-weight: normal;
+}
+
+.experience .item .subtitle {
+  font-size: 16px;
+  color: #434E5E;
+}
+.experience .item .technologies {
+  font-size: 16px;
 }
 
 /* Git section */
