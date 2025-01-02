@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <title>專案 - 簡易型記帳本</title>
+    <title>專案 - 簡易多人聊天室</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,12 @@
     
     <!-- Global CSS -->
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="../assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="../assets/plugins/github-activity/src/github-activity.css">
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
@@ -28,10 +34,11 @@
 			    <div class="col">         
 		            <img class="profile-image img-fluid float-start rounded-circle" src="../assets/images/profile.jpg" alt="profile image" width="180" height="180" />
                     <div class="profile-content">
-		                <h1 class="name">簡易型記帳本</h1>
-		                <h2 class="desc">一個功能陽春版的視窗化記帳簿程式</h2>   
+		                <h1 class="name">簡易多人聊天室</h1>
+		                <h2 class="desc">透過socket與thread技術建立伺服器，並透過Client多人連線形成聊天室</h2>   
 		                <ul class="social list-inline">
                             <li class="list-inline-item"><a href="../index.html"><i class="fa fa-home"></i></a></li>
+		                    <li class="list-inline-item"><a target="_blank" href="https://github.com/cakepi88430/ChatServer-java"><i class="fab fa-github-alt"></i></a></li>
 		                </ul> 
 		            </div><!--//profile-->
 			    </div><!--//col-->
@@ -56,19 +63,32 @@
                         <div class="content">
                             <div class="item">
                                 <h4 class="subtitle">簡介</h4>
-                                <p>在高中的時候接觸了視窗程式的設計而這是我當時透過Borland C++寫出來的第一個作品</p>
+                                <p>學到資料庫之連結、多執行續的觀念以及socket的概念實作了一個多人聊天室</p>
                                 <h4 class="subtitle">功能介紹</h4>
                                 <ul>
-                                    <li>條列式的紀錄支出與收入</li>
-                                    <li>記錄銀行金錢來往</li>
-                                    <li>存檔與讀檔</li>
+                                    <li>分為伺服器端與用戶端</li>
+                                    <li>供使用者註冊及登入</li>
+                                    <li>可以視窗介面上聊天</li>
+                                    <li>伺服器可以發布公告</li>
+                                    <li>伺服器端可以下指令</li>
                                 </ul>
-                                <h4 class="subtitle">程式介面</h4>
-                                <img width="100%" src="../assets/images/projects/accounting_book/main.jpg" />
+                                <h4 class="subtitle">程式介面(Server端)</h4>
+                                <img width="45%" src="../assets/images/projects/multi-person-chat-room/server1.png" />
+                                <img width="45%" src="../assets/images/projects/multi-person-chat-room/server2.png" />
+                                <br/><br/>
+                                <h4 class="subtitle">程式介面(Client端)</h4>
+                                <img width="45%" src="../assets/images/projects/multi-person-chat-room/client1.jpg" />
+                                <img width="45%" src="../assets/images/projects/multi-person-chat-room/client2.jpg" />
                                 <br/>
+                                <img width="45%" src="../assets/images/projects/multi-person-chat-room/client3.jpg" />
+                                <img width="45%" src="../assets/images/projects/multi-person-chat-room/client4.jpg" />
+                                <br/><br/>
                                 <h4 class="subtitle">技術使用:</h4>
                                 <ul class="list-inline">
-                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">C++</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Java</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Thread</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Socket</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Mysql</span></li>
                                 </ul>
                             </div>
                         </div><!--//content-->
