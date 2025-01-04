@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <title>專案 - 會員管理與線上商場</title>
+    <title>專案 - FakeXYZ圖磚伺服器</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,12 @@
     
     <!-- Global CSS -->
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="../assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="../assets/plugins/github-activity/src/github-activity.css">
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="../assets/css/styles.css">
@@ -28,11 +34,12 @@
 			    <div class="col">         
 		            <img class="profile-image img-fluid float-start rounded-circle" src="../assets/images/profile.jpg" alt="profile image" width="180" height="180" />
                     <div class="profile-content">
-		                <h1 class="name">會員管理與線上商場</h1>
-		                <h2 class="desc">基本會員註冊、登入與商品頁面</h2>   
+		                <h1 class="name">FakeXYZ圖磚伺服器</h1>
+		                <h2 class="desc">透過Canvas產生對應的XYZ之圖磚</h2>   
 		                <ul class="social list-inline">
-		                    <li class="list-inline-item"><a href="../index.html"><i class="fa fa-home"></i></a></li>
-                            <li class="list-inline-item last-item"><a target="_blank" href="https://youtu.be/7vVUxpnTs9k"><i class="fab fa-youtube"></i></a></li>
+                            <li class="list-inline-item"><a href="../index.html"><i class="fa fa-home"></i></a></li>
+		                    <li class="list-inline-item"><a target="_blank" href="https://github.com/cakepi88430/FakeXYZTileServer"><i class="fab fa-github-alt"></i></a></li>
+		                    <li class="list-inline-item last-item"><a target="_blank" href="https://youtu.be/XqFnGWzKZoo"><i class="fab fa-youtube"></i></a></li>
 		                </ul> 
 		            </div><!--//profile-->
 			    </div><!--//col-->
@@ -57,35 +64,27 @@
                         <div class="content">
                             <div class="item">
                                 <h4 class="subtitle">簡介</h4>
-                                <p>這個專案是在大學時，有一門課”互動式網頁程式設計”用我們在這堂課所學的知識寫出一個期末小專題</p>
+                                <p>在地理資訊系統(Geographic Information System, GIS)中，Tile是將一張圖切成很多塊正方形的圖片，而將這些圖片以圖磚的方式展示在地圖中。</p>
+                                <p>有時候想要在地圖中的某個區塊確認它的XYZ資訊，所以在Docker環境中開發了一個偽造的XYZ圖磚伺服器。</p>
                                 <h4 class="subtitle">功能介紹</h4>
                                 <ul>
-                                    <li>系統公告</li>
-                                    <li>與管理員聯繫與回信</li>
-                                    <li>個人資料設定</li>
-                                    <li>購物車系統</li>
-                                    <li>訂單查詢</li>
-                                    <li>商品管理</li>
+                                    <li>透過canvas產生圖片</li>
                                 </ul>
-                                <h4 class="subtitle">程式介面</h4>
-                                <img width="100%" src="../assets/images/projects/member_shopping/main1.jpg" />
+                                <h4 class="subtitle">圖磚產生</h4>
+                                <img width="90%" src="../assets/images/projects/fake-xyz-tile-server/fake_tile.png" />
                                 <br/><br/>
-                                <img width="100%" src="../assets/images/projects/member_shopping/main2.png" />
+                                <h4 class="subtitle">透過OpenLayer預覽圖磚</h4>
+                                <img width="90%" src="../assets/images/projects/fake-xyz-tile-server/openlayer_preview.png" />
                                 <br/><br/>
-                                <h4 class="subtitle">Demo on <a target="_blank" href="https://youtu.be/7vVUxpnTs9k">YouTube</a></h4>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/7vVUxpnTs9k?si=MHk8ylDCgNg5Gpqe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <br/><br/>
-                                <h4 class="subtitle">Changelog</h4>
-                                <ul>
-                                    <li>2024/12 導入Docker環境</li>
-                                </ul>
+                                <h4 class="subtitle">Demo on <a target="_blank" href="https://youtu.be/XqFnGWzKZoo">YouTube</a></h4>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XqFnGWzKZoo?si=m9GT2KEy11naeSI6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <br/>
                                 <h4 class="subtitle">技術使用:</h4>
                                 <ul class="list-inline">
-                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">PHP</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">HTML/CSS</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">MySQL</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Apache</span></li>
                                     <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Docker</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Node.js</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">OpenLayer</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary badge-pill">Vite</span></li>
                                 </ul>
                             </div>
                         </div><!--//content-->
